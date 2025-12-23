@@ -1,0 +1,36 @@
+{
+  "name": "mcp-code-execution",
+  "version": "2.0.0",
+  "description": "MCP 2.0 Code Execution Server - Intelligent Tool Discovery & Token Savings Demo",
+  "type": "module",
+  "main": "build/server.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node build/server.js",
+    "start:intelligent": "node build/server-intelligent.js",
+    "dev": "tsc && node build/server.js",
+    "dev:intelligent": "tsc && node build/server-intelligent.js",
+    "inspect": "npx @modelcontextprotocol/inspector node build/server.js",
+    "inspect:intelligent": "npx @modelcontextprotocol/inspector node build/server-intelligent.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "code-execution",
+    "devops",
+    "log-analyzer"
+  ],
+  "author": "DevOps Engineer",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
